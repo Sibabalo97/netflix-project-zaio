@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+
+body {
+    background-color: #000;
+    color: #efff;
+}
+
 .header {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/header-image.png);
     background-size: cover; 
@@ -12,13 +18,6 @@
     height: 100vh;
     position: relative;
     width: 100%;
-    
-
-}
-
-body {
-    background-color: #000;
-    color: #efff;
 }
 
 nav {
@@ -49,24 +48,21 @@ nav button {
 nav button a {
     text-decoration: none; /* Remove underline */
     color: #fff;
-
-    
 }
-
 
 .lang-btn {
     display: inline-flex;
     align-items: center;
     background: transparent;
-    border: 1px solid #efff ;
+    border: 1px solid #efff;
     padding: 7px 10px;
 }
 
 .lang-btn img {
     width: 10px;
     margin-left: 10px;
-
 }
+
 
 .header-content {
     position: absolute;
@@ -122,6 +118,9 @@ overflow: hidden;
     padding: 50px 12%;
     font-size: 22px;
 }
+
+
+
 
 .row {
     display: flex;
@@ -403,17 +402,28 @@ input[type="radio"] {
     }
     
     .footer-bottom {
+        
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 10px; 
     }
     
-    .footer .copyright {
-        font-size: 14px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+    .lang-dropdown {
+        margin-bottom: 10px; 
     }
+    
+    #lang-select {
+        padding: 5px;
+        font-size: 1em;
+    }
+    
+    .copyright {
+        margin: 0;
+        font-size: 0.9em;
+        color: #666;
+    }
+    
     
 
     
